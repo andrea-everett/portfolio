@@ -85,14 +85,21 @@ body {
   transition: .4s; /* for light mode animation */
 }
 
-h1, h2, h3 {
-  color: var(--title-color);
-  font-weight: var(--font-semibold);
+h1 {
+    color: white;
+    padding-left: 1.5rem;
+    font-weight: 300;
 }
 
 h2 {
+  color: var(--title-color);
+  font-weight: var(--font-semibold);
+  padding-left: 1.5rem;
+}
+
+h3 {
     padding-left: 1.5rem;
-    padding-bottom: 1rem;
+    color: #f5cac3;
 }
 
 .section__subtitle {
@@ -388,7 +395,7 @@ body.light-theme{
     row-gap: 1srem;
     align-items: center;
 }
-.section__subtitle{
+#about .section__subtitle{
     margin-left: 2rem;
 }
 
@@ -462,8 +469,8 @@ body.light-theme{
 }
 
 .skills_group {
-    display: grid;
-   align-content: flex-start;
+    display: flex;
+  
     row-gap: 1rem;
 }
 
@@ -490,23 +497,22 @@ body.light-theme{
 /*=============== SERVICES ===============*/
 .services_container {
     grid-template-columns: repeat(2, 1fr);
-    gap: 1.5rem;
-    padding-top: 1rem;
+    gap: 1rem;
 }
 
 .services_card {
     background-color: var(--container-color);
-    /* padding: 3rem 1.5rem 1.5rem; */
+    padding: 3rem 1.5rem 1.5rem;
     border-radius: 1rem;
 }
 
 .services_title {
     font-size: var(--h3-font-size);
-    margin-bottom: 2.5rem;
+    margin-bottom: 2rem;
 }
 
 .services_button {
-    color: var(--first-color);
+    color: #84a59d;
     font-size: var(--small-font-size);
     display: flex;
     align-items: center;
