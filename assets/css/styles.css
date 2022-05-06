@@ -8,22 +8,22 @@
   /*========== Colors ==========*/
   /*Color mode HSL(hue, saturation, lightness)*/
   /*
-        Yellow: hsl(37° 89% 67%)
-        Green: 165° 15% 58%
-        Light Pink:  31° 57% 93%
-        Dark Pink:  8° 71% 86%
-  */
-  --first-hue: 37 ;
+       Purple: 	hsl(349, 52%, 61%)
+        Blue: hsl(207, 90%, 72%)
+        Pink: hsl(356, 66%, 75%)
+        Teal: hsl(174, 63%, 62%)
+  */    
+  --first-hue: 349;
   --sat: 66%;
   --lig: 75%;
   --second-hue: 219;
   --first-color: hsl(var(--first-hue), var(--sat), var(--lig));
   --first-color-alt: hsl(var(--first-hue), var(--sat), 71%); /* -4% */
-  --title-color:#84a59d ;
-  --text-color: #84a59d;
-  --text-color-light: #84a59d;
-  --body-color: #f7ede2;
-  --container-color: #f5cac3;
+  --title-color: hsl(var(--second-hue), 15%, 95%);
+  --text-color: hsl(var(--second-hue), 8%, 75%);
+  --text-color-light: hsl(var(--second-hue), 4%, 55%);
+  --body-color: hsl(var(--second-hue), 48%, 8%);
+  --container-color: hsl(var(--second-hue), 32%, 12%);
 
   /*========== Font and typography ==========*/
   /*.5rem = 8px | 1rem = 16px ...*/
@@ -391,8 +391,11 @@ body.light-theme{
     color: var(--first-color);
 }
 /*=============== ABOUT ===============*/
+.about section{
+    margin-left: 1.5rem;
+}
 .about_container{
-    row-gap: 1srem;
+    row-gap: 1rem;
     align-items: center;
 }
 #about .section__subtitle{
@@ -400,8 +403,7 @@ body.light-theme{
 }
 
 .about_container img{
-    justify-content: center;
-    width:50%;
+   padding: 5rem;
     border-radius: 1.5rem;
 }
 
@@ -495,6 +497,10 @@ body.light-theme{
 }
 
 /*=============== SERVICES ===============*/
+.section {
+    margin-left: 1.5rem;
+}
+
 .services_container {
     grid-template-columns: repeat(2, 1fr);
     gap: 1rem;
@@ -518,6 +524,7 @@ body.light-theme{
     align-items: center;
     column-gap: .25rem;
     cursor: pointer;
+    margin-left: 1.5rem;
 }
 
 .services_button:hover .servies_icon {
@@ -528,9 +535,6 @@ body.light-theme{
     font-size: 1rem;
     transition: .5s;
 }
-
-
-
 
 /* Services modal */
 .services_modal {
@@ -623,6 +627,7 @@ body.light-theme{
 }
 
 .work_img {
+    width: 100%;
     border-radius: 1rem;
     margin-bottom: 1rem;
 }
@@ -640,6 +645,7 @@ body.light-theme{
     display: flex;
     align-items: center;
     column-gap: .25rem;
+    margin-left: 1.5rem;
 }
 
 .work_button:hover .work_icon {
@@ -685,10 +691,12 @@ body.light-theme{
 .contact_card-title,
 .contact_card-data{
     font-size: var(--small-font-size);
+    margin-left: 1.5rem;
 }
 
 .contact_card-title{
     font-weight: var(--font-medium);
+    margin-left: 1.5rem;
 }
 
 .contact_card-data{
@@ -703,6 +711,9 @@ body.light-theme{
 
 .footer_container{
     padding: 2rem 0 6rem;
+}
+.section__subtitle{
+    margin-left: 1.5rem;
 }
 
 .footer_title,
