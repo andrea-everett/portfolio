@@ -25,7 +25,7 @@ modalClose.forEach((mc) =>{
             mv.classList.remove('active-modal')
         })
     })
-}
+})
 /*=============== MIXITUP FILTER PORTFOLIO ===============*/
 let mixerPortfolio = mixitup('.work_container', {
     selectors: {

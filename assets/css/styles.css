@@ -87,23 +87,16 @@ body {
 
 h1 {
     color: white;
-    padding-left: 1.5rem;
     font-weight: 300;
 }
 
 h2 {
   color: var(--title-color);
   font-weight: var(--font-semibold);
-  padding-left: 1.5rem;
 }
 
 h3 {
-    padding-left: 1.5rem;
     color: #f5cac3;
-}
-
-.section__subtitle {
-    margin-left: 1.5rem;
 }
 
 ul {
@@ -191,6 +184,7 @@ body.light-theme{
   display: block;
   font-size: var(--smaller-font-size);
   color: var(--text-color-light);
+  margin: 2rem;
 }
 
 /*=============== HEADER & NAV===============*/
@@ -391,15 +385,19 @@ body.light-theme{
     color: var(--first-color);
 }
 /*=============== ABOUT ===============*/
-.about section{
+#about h1 {
+    margin-left: 1.5rem;
+    color: hsl(var(--second-hue), 8%, 75%);
+    font-size: var(--normal-font-size);
+}
+
+#about h2{
     margin-left: 1.5rem;
 }
+
 .about_container{
     row-gap: 1rem;
     align-items: center;
-}
-#about .section__subtitle{
-    margin-left: 2rem;
 }
 
 .about_container img{
@@ -445,7 +443,17 @@ body.light-theme{
 }
 
 /*=============== SKILLS ===============*/
-.skills_container{
+#skills h1 {
+    margin-left: 1.5rem;
+    color: hsl(var(--second-hue), 8%, 75%);
+    font-size: var(--normal-font-size);
+}
+
+#skills h2 {
+    margin-left: 1.5rem;
+}
+
+.skills_container {
     row-gap: 2rem;
     padding-top: 1rem;
 }
@@ -466,19 +474,17 @@ body.light-theme{
 
 .skills_box {
     display: flex;
-    justify-content: center;
-    column-gap: 2.5rem;
+    flex-wrap: wrap;
+
 }
 
 .skills_group {
-    display: flex;
-  
-    row-gap: 1rem;
+    flex-wrap: wrap;
 }
 
 .skills_data{
-    display: flex;
-    column-gap: .5rem;
+    display: grid;
+    row-gap: .5rem;
 }
 
 .skills .bxs-badge-check {
@@ -497,24 +503,24 @@ body.light-theme{
 }
 
 /*=============== SERVICES ===============*/
-.section {
+/* .section {
     margin-left: 1.5rem;
-}
+} */
 
 .services_container {
     grid-template-columns: repeat(2, 1fr);
-    gap: 1rem;
+    gap: .5rem;
 }
 
 .services_card {
     background-color: var(--container-color);
-    padding: 3rem 1.5rem 1.5rem;
+    padding: 2rem 2rem 2rem;
     border-radius: 1rem;
 }
 
 .services_title {
     font-size: var(--h3-font-size);
-    margin-bottom: 2rem;
+    margin-bottom: 2.5rem;
 }
 
 .services_button {
@@ -533,7 +539,7 @@ body.light-theme{
 
 .services_icon {
     font-size: 1rem;
-    transition: .5s;
+    transition: .4s;
 }
 
 /* Services modal */
@@ -597,9 +603,11 @@ body.light-theme{
     cursor: pointer;
 }
 
-
 /*Active modal*/
-
+.active-modal {
+    opacity: 1;
+    visibility: visible;
+}
 
 /*=============== WORK ===============*/
 
