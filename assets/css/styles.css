@@ -454,7 +454,6 @@ body.light-theme{
 }
 
 .skills_container {
-    row-gap: 2rem;
     padding-top: 1rem;
 }
 
@@ -475,7 +474,8 @@ body.light-theme{
 .skills_box {
     display: flex;
     flex-wrap: wrap;
-
+    justify-content: center;
+    gap: 2.5rem;
 }
 
 .skills_group {
