@@ -503,9 +503,15 @@ body.light-theme{
 }
 
 /*=============== SERVICES ===============*/
-/* .section {
+#services h1 {
     margin-left: 1.5rem;
-} */
+    color: hsl(var(--second-hue), 8%, 75%);
+    font-size: var(--normal-font-size);
+}
+
+#services h2 {
+    margin-left: 1.5rem;
+}
 
 .services_container {
     grid-template-columns: repeat(2, 1fr);
@@ -530,10 +536,9 @@ body.light-theme{
     align-items: center;
     column-gap: .25rem;
     cursor: pointer;
-    margin-left: 1.5rem;
 }
 
-.services_button:hover .servies_icon {
+.services_button:hover .services_icon {
     transform: translateX(.25rem)
 }
 
@@ -544,7 +549,7 @@ body.light-theme{
 
 /* Services modal */
 .services_modal {
-    pointer-events: fixed;
+    position: fixed;
     inset: 0;
     background-color: hsla(var(--secound-hue), 28%, 16%, .7);
     padding: 2rem 1rem;
@@ -564,14 +569,19 @@ body.light-theme{
 }
 
 .services_modal-title,
-.services_modal-description{
+.services_modal-description {
     text-align: center;
 }
 
-.services_modal-title{
+.services_modal-title {
     font-size: var(--h2-font-size);
     color: var(--first-color);
     margin-bottom: .5rem;
+}
+
+.services_modal-description {
+    font-size: var(--small-font-size);
+    margin-bottom: 2rem;
 }
 
 .services_modal-list {
@@ -591,7 +601,7 @@ body.light-theme{
 }
 
 .services_modal-info{
-    position: absolute;
+    font-size: var(--small-font-size);
 }
 
 .services_modal-close {
@@ -610,7 +620,15 @@ body.light-theme{
 }
 
 /*=============== WORK ===============*/
+#work h1 {
+    margin-left: 1.5rem;
+    color: hsl(var(--second-hue), 8%, 75%);
+    font-size: var(--normal-font-size);
+}
 
+#work h2 {
+    margin-left: 1.5rem;
+}
 
 .work_filters {
     display: flex;
