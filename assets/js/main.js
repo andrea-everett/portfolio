@@ -72,10 +72,10 @@ window.addEventListener('scroll', scrollActive)
 /*=============== LIGHT DARK THEME ===============*/ 
 const themeButton = document.getElementById('theme-button')
 const lightTheme = 'light-theme'
-const iconTheme ='bx-sun'
+const iconTheme ='bx bx-sun'
 
-const selectedTheme = localStorage.getItme('selected-theme')
-const selectedicon = localStorage.getItme('selected-icon')
+const selectedTheme = localStorage.getIItem('selected-theme')
+const selectedIcon = localStorage.getItem('selected-icon')
 
 const getCurrentTheme = () => document.body.classList.contains(lightTheme) ? 'dark' : 'light'
 const getCurrentIcon = () => document.body.classList.contains(iconTheme) ? 'bx bx-moon' : 'bx bx-sun'
