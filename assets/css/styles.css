@@ -173,7 +173,6 @@ body.light-theme{
 }
 /*=============== REUSABLE CSS CLASSES ===============*/
 .container {
-  /* max-width: 968px; */
   margin-left: 1rem;
   margin-right: 1rem;
 }
@@ -188,7 +187,7 @@ body.light-theme{
 }
 
 .section {
-  padding: 4.5rem 0 1rem;
+  padding: 2rem 0 1rem;
 }
 
 .section__title, 
@@ -425,6 +424,7 @@ body.light-theme{
 
 .bio-grid{
     background-color: #fff;
+    border-radius: 5%;
     display: flex;
     padding: 1rem;
     box-sizing: none;
@@ -478,7 +478,7 @@ p{
 .about_description{
     margin: 1rem;
     padding: 0;
-    line-height: 14px;
+    line-height: 18px;
 }
 
 .button{
@@ -496,7 +496,7 @@ p{
 }
 
 .skills_container {
-    padding-top: 1rem;
+    padding-top: .5rem;
 }
 
 .skills_content {
@@ -698,7 +698,7 @@ p{
 
 .work_img {
     max-width: 100%;
-    /* border-radius: 1rem; */
+    border-radius: 1rem;
     margin-bottom: 1rem;
 }
 
@@ -728,8 +728,10 @@ p{
     transition: .4s;
 }
 
-.input[type=".work_button"]{
-    background-color: none;
+input[type="work_button"]{
+    -webkit-appearance: none;
+    background: transparent;
+    color:white;
 }
 
 /* Active item work*/
@@ -984,15 +986,15 @@ p{
     }
 }
 
-/* For large devices */
+/* For large devices
 @media screen and (min-width: 767px){
     .work_container{
         grid-template-columns: repeat(2, max-content);
         column-gap: 3rem;
     }
-}
+} */
 
-@media screen  and (min-width: 1440px) {
+@media   screen and (min-width: 1440px) {
    .container {
        max-width: 1440px;
    }
@@ -1037,6 +1039,13 @@ p{
         column-gap: 4rem;
     }
 
+    .about_container img{
+        max-width: 20%;
+        max-height: 30%;
+        padding: 8rem;
+        border-radius: 1.5rem;
+    }
+
     .about_img{
         width: 100px;
     }
@@ -1059,6 +1068,15 @@ p{
         margin-bottom: 2.5rem;
     }
 
+    .about_container{
+        padding: 10rem;
+        width: 50%;
+    }
+
+    .bio-grid{
+        background-color: #84a59d;
+    }
+
     .skills_container{
         grid-template-columns: repeat(2, 350px);
         column-gap: 3rem;
@@ -1068,26 +1086,33 @@ p{
         padding: 5rem 2rem 1.5rem;;
     }
 
-    .work_container{
-        gap: 3rem;
-    }
-
-    .work_card{
-        padding: 1.25rem;
+    .container{
+        max-width: 50%;
     }
 
     .work_img{
-        margin-bottom: 1rem;
+        max-width: 50%;
+        border-radius: 3rem;
+        margin-bottom: 3rem;
     }
+
+    .work_card_mobile{
+        padding: 10rem;
+    }
+    .work_card_design{
+        max-width: 50%;
+    }
+
     .work_title{
         margin-bottom: .5rem;
     }
+
     .contact_container{
         column-gap: 6rem;
     }
+
     .footer_social-link{
         font-size: 1.25rem;
         padding: .4rem;
-
     }
 
