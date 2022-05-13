@@ -41,13 +41,23 @@ let mixerPortfolio = mixitup('.work_container', {
 const linkWork = document.querySelectorAll('.work_item')
 
 function activeWork(){
-    linkWork.forEach(L => L.classList.remove('.acitve-work'))
+    linkWork.forEach(L => L.classList.remove('.active-work'))
     this.classList.add('active-work')
 }
 
 linkWork.forEach(L=> l.add('click', activeWork))
-/*=============== SWIPER TESTIMONIAL ===============*/
+/*=============== HOME SOCIAL LINKS ===============*/
+function openWindowLinkedIn() {
+    window.open("https://www.linkedin.com/in/andrea-everett-4a57a8222/");
+  }
 
+  function openWindowGithub() {
+    window.open("https://github.com/andrea-everett");
+  }
+
+  function openWindowTwitter() {
+    window.open("");
+  }
 
 /*=============== SCROLL SECTIONS ACTIVE LINK ===============*/
 function openWindow() {
@@ -85,28 +95,4 @@ themeButton.addEventListener('click', () => {
     localStorage.setItem('selected-theme', getCurrentTheme())
     localStorage.setItem('selected-icon', getCurrentIcon())
 })
-/*=============== OPEN GMAIL SIGNIN ===============*/
-var googleUser = {};
-var startApp = function() {
-  gapi.load('auth2', function(){
-    // Retrieve the singleton for the GoogleAuth library and set up the client.
-    auth2 = gapi.auth2.init({
-      client_id: 'YOUR_CLIENT_ID.apps.googleusercontent.com',
-      cookiepolicy: 'single_host_origin',
-      // Request scopes in addition to 'profile' and 'email'
-      //scope: 'additional_scope'
-    });
-    attachSignin(document.getElementById('customBtn'));
-  });
-};
-
-function attachSignin(element) {
-  console.log(element.id);
-  auth2.attachClickHandler(element, {},
-      function(googleUser) {
-        document.getElementById('name').innerText = "Signed in: " +
-            googleUser.getBasicProfile().getName();
-      }, function(error) {
-        alert(JSON.stringify(error, undefined, 2));
-      });
-}
+/*=============== EMAIL MESSAGE===============*/
