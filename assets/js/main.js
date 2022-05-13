@@ -30,7 +30,7 @@ modalClose.forEach((mc) =>{
 /*=============== MIXITUP FILTER PORTFOLIO ===============*/
 let mixerPortfolio = mixitup('.work_container', {
     selectors: {
-        target: '.work_card'
+        target: '.work_card_design'
     },
     animation: {
         duration: 300
@@ -38,7 +38,7 @@ let mixerPortfolio = mixitup('.work_container', {
 })
 
 /* Link active work */ 
-const linkWork = document.querySelectorAll('.work_item')
+const linkWork = document.querySelectorAll('.work_items')
 
 function activeWork(){
     linkWork.forEach(L => L.classList.remove('.active-work'))
