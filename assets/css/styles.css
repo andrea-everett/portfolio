@@ -131,7 +131,7 @@ img {
 
 /*========== Variables Light theme ==========*/
 body.light-theme{
-    --title-color: hsl(var(--second-hue), 15%, 15%);
+    --title-color: hsl(var(--second-hue), 15%, 30%);
     --text-color: hsl(var(--second-hue), 8%, 35%);
     --body-color: hsl(var(--second-hue), 100%, 99%);
     --container-color: #fff;
@@ -165,7 +165,11 @@ body.light-theme{
 .light-theme .home_scroll 
 .light-theme .button
 .light-theme .button:hover{
-    color: var(--title-color);
+    color: var(--first-color)
+}
+
+.light-theme h1{
+    color: black;
 }
 /*=============== REUSABLE CSS CLASSES ===============*/
 .container {
@@ -416,6 +420,12 @@ body.light-theme{
 .about_container{
     row-gap: 1rem;
     align-items: center;
+}
+
+.bio-grid{
+    max-width: 50%;
+    max-height: 50%;
+    padding: 1rem;
 }
 
 .about_container img{
