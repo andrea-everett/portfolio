@@ -153,7 +153,7 @@ body.light-theme{
     color: var(--text-color);
 }
 
-.ight-theme .home_social-link {
+.light-theme .home_social-link {
     box-shadow:  0 2px 8px hsla(var(--second-hue), 48%, 8%, .1);
 }
 
@@ -995,9 +995,9 @@ input[type="work_button"]{
     }
 } */
 
-@media   screen and (min-width: 1440px) {
+@media  screen and (max-width: 1440px) {
    .container {
-       max-width: 1440px;
+       max-width: auto;
    }
     .home_data{
         align-items: center;
@@ -1047,8 +1047,8 @@ input[type="work_button"]{
         border-radius: 1.5rem;
     }
 
-    .about_img{
-        width: 100px;
+    .about_container img{
+        width: 20rem;
     }
 
     .about_data{
@@ -1076,6 +1076,7 @@ input[type="work_button"]{
 
     .bio-grid{
         background-color: #84a59d;
+        margin: 20rem;
     }
 
     .skills_container{
