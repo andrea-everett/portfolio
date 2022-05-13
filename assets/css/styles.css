@@ -169,7 +169,7 @@ body.light-theme{
 }
 /*=============== REUSABLE CSS CLASSES ===============*/
 .container {
-  max-width: 968px;
+  /* max-width: 968px; */
   margin-left: 1rem;
   margin-right: 1rem;
 }
@@ -236,7 +236,7 @@ body.light-theme{
     position: fixed;
     bottom: 1rem;
     background-color: hsla(var(--second-hue), 32%, 16%, .8);
-    width:90%;
+    width:98%;
     border-radius: 4rem;
     padding: 1rem 2.25rem;
     backdrop-filter: blur(10px);
@@ -419,7 +419,11 @@ body.light-theme{
 }
 
 .about_container img{
-   padding: 5rem;
+    max-width: 50%;
+    max-height: 40%;
+    padding: 3rem;
+    padding-top: 0;
+    padding-bottom: 0;
     border-radius: 1.5rem;
 }
 
@@ -483,7 +487,7 @@ body.light-theme{
 
 .skills_title{
     font-size: var(--normal-font-size);
-    font-weight: var(--font-medium);
+    font-weight: 600;
     color: var(--first-color);
     text-align: center;
     margin-bottom: 1.5rem;
@@ -498,26 +502,28 @@ body.light-theme{
 
 .skills_group {
     flex-wrap: wrap;
+    border-radius: 5%;
+    box-sizing: border-box;
 }
 
 .skills_data{
     display: grid;
-    row-gap: .5rem;
 }
 
 .skills .bxs-badge-check {
-    font-size: 1rem;
+    font-size: .2rem;
     color: var(--first-color);
 }
 
 .skills_name {
     font-size: var(--normal-font-size);
     font-weight: var(--font-medium);
-    line-height: 18px;
+    line-height: 14px;
 }
 
 .skills_level {
     font-size: var(--tiny-font-size);
+    padding-right: 1rem;
 }
 
 /*=============== SERVICES ===============*/
@@ -666,13 +672,14 @@ body.light-theme{
 
 .work_card {
     background-color: var(--container-color);
-    padding: 1rem;
+    padding: .5rem;
     border-radius: 1rem;
 }
 
 .work_img {
-    width: 100%;
-    border-radius: 1rem;
+    max-width: 50%;
+    max-height: 50%;
+    /* border-radius: 1rem; */
     margin-bottom: 1rem;
 }
 
@@ -682,7 +689,12 @@ body.light-theme{
     margin-bottom: .25rem;
 }
 
+.input {
+    background-color: none;
+}
+
 .work_button {
+    background-color: none;
     width: max-content;
     color: var(--first-color);
     font-size: var(--small-font-size);
@@ -720,7 +732,7 @@ body.light-theme{
 }
 
 .contact_container{
-    row-gap: 3rem;
+    row-gap: 4rem;
     padding-bottom: 3rem;
 }
 
@@ -739,27 +751,53 @@ body.light-theme{
 .contact_card-icon{
     font-size: 2rem;
     color: var(--title-color);
-    margin-bottom: .25rem;
 }
 
 .contact_card-title,
 .contact_card-data{
-    font-size: var(--small-font-size);
+    font-size: var(--font-medium);
 }
 
 .contact_card-title{
-    font-weight: var(--font-medium);
+    text-align: center;
+    font-size: 1.25rem;
+    margin-bottom: .5rem;
+    background-color: #fff;
+    border-radius: 5%;
 }
 
 .contact_card-data{
     display: block;
-    margin-bottom: .75rem;
+    margin-bottom: .5rem;
+    margin-top: .5rem;
+    padding: 0;
 }
 
 .contact_button{
     color: var(--first-color);
     font-size: var(--small-font-size);
     display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: .25rem;
+    padding-top: .5rem;
+}
+
+.contact_form {
+    padding-top: 1rem;
+}
+
+.contact_form-tag {
+    padding-right: .2rem;
+}
+
+.contact_form-div {
+    padding: .5rem;
+}
+
+.button {
+  margin-top: 1rem;
+ text-align: center;
 }
 
 /*=============== FOOTER ===============*/
@@ -935,10 +973,12 @@ body.light-theme{
     }
 }
 
-@media screen  and (min-width: 992px) {
-    .container{
-        margin-left: auto;
-        margin-right: auto;
+@media screen  and (min-width: 1440px) {
+   .container {
+       max-width: 1440px;
+   }
+    .home_data{
+        align-items: center;
     }
 
     .section{
