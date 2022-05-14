@@ -75,7 +75,7 @@ function openWindow() {
 /*=============== LIGHT DARK THEME ===============*/ 
 const themeButton = document.getElementById('theme-button')
 const lightTheme = 'light-theme'
-const iconTheme =' bx-sun'
+const iconTheme = 'bx-sun'
 
 const selectedTheme = localStorage.getItem('selected-theme')
 const selectedIcon = localStorage.getItem('selected-icon')

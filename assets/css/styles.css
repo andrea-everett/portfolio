@@ -75,14 +75,15 @@ body {
 h1 {
     color: white;
     font-weight: 300;
-    margin-left: 1.5rem;
+    margin-left: 1rem;
     margin-bottom: 0;
+    font-size: var(--smaller-font-size);
 }
 
 h2 {
   color: var(--title-color);
   font-weight: var(--font-semibold);
-  margin-left: 1.5rem;
+  margin-left: 1rem;
   margin-top: 0;
 }
 
@@ -103,12 +104,6 @@ button {
   border: none;
   outline: none;
 }
-
-/* img {
-  max-width: 100%;
-  height: auto;
-} */
-
 /*=============== THEME ===============*/
 .change-theme{
     font-size: 1.25rem;
@@ -132,30 +127,30 @@ body.light-theme{
     Color changes in some parts of 
     the website, in light theme
 ==========*/
-.light-theme .scroll-header{
+.light-theme.scroll-header{
     box-shadow: 0 2px 4px hsla(0, 0%, 1%, .1);
 }
 
-.light-theme .nav_menu{
+.light-theme.nav_menu{
     background-color: hsla(var(--second-hue), 32%, 90%, .8);
 }
 
-.light-theme .section__subtitle{
+.light-theme.section__subtitle{
     color: var(--text-color);
 }
 
-.light-theme .home_social-link {
+.light-theme.home_social-link {
     box-shadow:  0 2px 8px hsla(var(--second-hue), 48%, 8%, .1);
 }
 
-.light-theme .home_social-link::after {
+.light-theme.home_social-link::after {
     background-color: var(--title-color);
 }
 
-.light-theme .home_social-link,
-.light-theme .home_scroll 
-.light-theme .button
-.light-theme .button:hover{
+.light-theme.home_social-link,
+.light-theme.home_scroll 
+.light-theme.button
+.light-theme.button:hover{
     color: var(--first-color)
 }
 
@@ -231,7 +226,7 @@ body.light-theme{
     justify-content: center;
     bottom: 1rem;
     background-color: hsla(var(--second-hue), 32%, 16%, .8);
-    width:91%;
+    width:82%;
     border-radius: 4rem;
     margin-right: 1.5rem;
     backdrop-filter: blur(10px);
@@ -400,34 +395,15 @@ body.light-theme{
     margin-left: 0;
 }
 /*=============== ABOUT ===============*/
-#about h1 {
-    margin-left: 1rem;
-    color: hsl(var(--second-hue), 8%, 75%);
-    font-size: var(--normal-font-size);
-}
-
-#about h2{
-    margin-left: 1rem;
-}
-
 .about_container{
     row-gap: 1rem;
     align-items: center;
 }
 
-/* .bio-grid{
-    background-color: #fff;
-    border-radius: 5%;
-    display: flex;
-    padding: 1rem;
-    box-sizing: none;
-} */
-
-/* p{
-    display: flex;
-    padding-top: 2.5rem;
-    line-height: 14px;
-} */
+#about.button{
+   margin-left: 8.5rem;
+   margin-top: 1rem;
+}
 
 .about_container img{
     max-width: 60%;
@@ -510,9 +486,11 @@ body.light-theme{
 }
 
 .skills_group {
+    text-align: center;
     flex-wrap: wrap;
     border-radius: 5%;
     box-sizing: border-box;
+    width: 100px;
 }
 
 .skills_data{
@@ -528,11 +506,11 @@ body.light-theme{
     font-size: var(--normal-font-size);
     font-weight: var(--font-medium);
     line-height: 14px;
+    margin-bottom: 0;
 }
 
 .skills_level {
     font-size: var(--tiny-font-size);
-    padding-right: 1rem;
 }
 
 /*=============== SERVICES ===============*/
@@ -747,6 +725,7 @@ input[type="work_button"]{
 }
 
 .contact_info{
+    margin: 1rem;
     display: grid;
     gap: 1rem;
 }
@@ -794,6 +773,10 @@ input[type="work_button"]{
     padding-top: .5rem;
 }
 
+.contact_content{
+    padding: 0;
+}
+
 .contact_form {
     padding-top: 1rem;
     padding-left: 1rem;
@@ -807,8 +790,22 @@ input[type="work_button"]{
     padding: .5rem;
 }
 
-.button {
+.contact_form-tag-name{
+    padding-right: 2rem;
+}
+
+.contact_form-tag-email{
+  padding-right: 2.3rem;
+}
+
+.contact_form-tag-message{
+  padding-right: .75rem;
+}
+
+#contact.button {
  text-align: center;
+ margin-top: 3rem;
+ margin-left: 5.6rem;
 }
 
 /*=============== FOOTER ===============*/
@@ -826,6 +823,7 @@ input[type="work_button"]{
 .footer_title,
 .footer_link{
     color: var(--body-color);
+    margin-left: 0;
 }
 
 .footer_title{
@@ -838,6 +836,7 @@ input[type="work_button"]{
     justify-content: center;
     column-gap: 1.5rem;
     margin-bottom: 2rem;
+    padding-left: 0;
 }
 
 .footer_social{
@@ -845,6 +844,7 @@ input[type="work_button"]{
     justify-content: center;
     column-gap: 1.5rem;
     margin-bottom: 2rem;
+    padding-left: 0;
 }
 
 .footer_social{
@@ -911,11 +911,6 @@ input[type="work_button"]{
 
     .skills_name{
         font-size: .813rem;
-    }
-
-    .services_container{
-        grid-template-columns: 145px;
-        justify-content: center;
     }
 
     .work_item{
@@ -1120,26 +1115,14 @@ input[type="work_button"]{
       padding: 0;
   }
 
-  .contact_form-tag-name{
-      padding-right: 2rem;
-  }
-
-  .contact_form-tag-email{
-    padding-right: 2.3rem;
+.button#contact{
+    width: 200px;
+    margin: 2rem 5rem 0rem 0rem;
 }
 
-.contact_form-tag-message{
-    padding-right: 2rem;
+.footer_social-link{
+    font-size: 1.25rem;
+    padding: .4rem;
+    border-radius: 5%;
 }
-
-    .button#contact{
-        width: 200px;
-        margin: 2rem 5rem 0rem 0rem;
-    }
-
-    .footer_social-link{
-        font-size: 1.25rem;
-        padding: .4rem;
-        border-radius: 5%;
-    }
 }}
