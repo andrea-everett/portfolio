@@ -95,4 +95,15 @@ themeButton.addEventListener('click', () => {
     localStorage.setItem('selected-theme', getCurrentTheme())
     localStorage.setItem('selected-icon', getCurrentIcon())
 })
-/*=============== EMAIL MESSAGE===============*/
+/*=============== FOOTER SOCIAL LINK===============*/
+function openSocialInstagram() {
+    window.open("https://instagram.com/foreverettgirl");
+  }
+
+  function openFooterTwitter() {
+    window.open("");
+  }
+
+  function openFooterGit() {
+    window.open("https://github.com/andrea-everett");
+  }

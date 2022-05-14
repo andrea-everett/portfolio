@@ -75,13 +75,15 @@ body {
 h1 {
     color: white;
     font-weight: 300;
-    margin: 0;
+    margin-left: 1.5rem;
+    margin-bottom: 0;
 }
 
 h2 {
   color: var(--title-color);
   font-weight: var(--font-semibold);
-  margin: 0;
+  margin-left: 1.5rem;
+  margin-top: 0;
 }
 
 h3 {
@@ -182,6 +184,7 @@ body.light-theme{
 .section__title, 
 .section__subtitle {
   text-align: center;
+  margin-top: 0;
 } 
 
 .section__title {
@@ -292,10 +295,12 @@ body.light-theme{
 .home_education{
     color: var(--text-color);
     margin-bottom: 2.5rem;
+    margin-top: 0;
 }
 
 .home_name{
     font-size: var(--biggest-font-size);
+   margin: 0;
 }
 
 .home_img{
@@ -318,10 +323,8 @@ body.light-theme{
 }
 
 .home_buttons{
-    display: flex;
     justify-content: center;
     align-items: center;
-    gap:1.5rem;
 }
 
 .home_social,
@@ -375,6 +378,7 @@ body.light-theme{
 }
 /*=============== BUTTONS ===============*/
 .button{
+    justify-content: center;
     display: inline-block;
     background-color: var(--first-color);
     color: var(--body-color);
@@ -393,6 +397,7 @@ body.light-theme{
     background-color: transparent;
     border: 2px solid var(--first-color);
     color: var(--first-color);
+    margin-left: 0;
 }
 /*=============== ABOUT ===============*/
 #about h1 {
@@ -467,10 +472,6 @@ body.light-theme{
     margin: 1rem;
     padding: 0;
     line-height: 18px;
-}
-
-.button{
-    margin-left: 1rem;
 }
 /*=============== SKILLS ===============*/
 #skills h1 {
@@ -807,7 +808,6 @@ input[type="work_button"]{
 }
 
 .button {
-  margin-top: 1rem;
  text-align: center;
 }
 
@@ -887,13 +887,9 @@ input[type="work_button"]{
 
 /*=============== BREAKPOINTS ===============*/
 /* For small devices */
-@media screen and (max-width: 320px){
+@media screen and (min-width: 320px){
     .nav_menu{
         padding: 1rem 1.5rem;
-    }
-
-    .home_buttons{
-        flex-direction: column;
     }
 
     .home_handle{
@@ -929,7 +925,6 @@ input[type="work_button"]{
     .work_filters{
         column-gap: .25rem;
     }
-
 
 /* For medium devices */
 @media screen and (min-width: 576px) {
@@ -1004,6 +999,14 @@ input[type="work_button"]{
 }
 
 @media  screen and (min-width: 992px) {
+    .nav_logo{
+        padding-left: 1.5rem;
+    }
+
+    .bx-bx-moon:before{
+        margin-right: 1.5rem;
+    }
+
     .container{
         margin-left: auto;
         margin-right: auto;
@@ -1043,24 +1046,24 @@ input[type="work_button"]{
         font-size: 2rem;
     }
 
-    .about.section{
-        grid-template-columns: repeat(2,1fr);
-        align-items: center;
-        column-gap: 4rem;
+    .about_all{
+      display:grid;
+      grid-template-columns: 50% 50%;
     }
-
-    /* .about_container{
-        grid-template-columns: repeat(2,1fr);
-        align-items: center;
-        column-gap: 4rem;
-    } */
 
     .about_img{
         width: 350px;
     }
 
+    #about.button{
+        width: 100px;
+        margin-left: 5.5rem;
+    }
+
     .about_data{
         text-align: initial;
+        width: 70%;
+        padding-top: 0;
     }
 
     .about_info{
@@ -1073,27 +1076,13 @@ input[type="work_button"]{
     }
 
     .about_description{
-        padding: 0 4rem 0 0;
-        margin-bottom: 2.5rem;
-    }
-
-    .about_container{
-        padding: 10rem;
-        max-width: 50%;
-    }
-
-    .bio-grid{
-        grid-template-columns: repeat(2, 350px);
-        column-gap: 3rem;
+        padding-top: 1.5rem;
+        width: 70%;
     }
 
     .services_container{
-        grid-template-columns: repeat(3, 192px);
+        grid-template-columns: repeat(2, 400px);
         column-gap: 3rem;
-    }
-
-    .services_card{
-        padding: 5rem 2rem 1.5rem;;
     }
 
     .work_container{
@@ -1107,6 +1096,7 @@ input[type="work_button"]{
     .work_img{
         margin-bottom: 3rem;
         width: 400px;
+        height: 400px;
     }
 
     .work_card_mobile{
@@ -1121,7 +1111,30 @@ input[type="work_button"]{
     }
 
     .contact_container{
-        column-gap: 6rem;
+        display: grid;
+        grid-template-columns: 50% 50%;
+    }
+
+  .contact_form{
+      margin: 0;
+      padding: 0;
+  }
+
+  .contact_form-tag-name{
+      padding-right: 2rem;
+  }
+
+  .contact_form-tag-email{
+    padding-right: 2.3rem;
+}
+
+.contact_form-tag-message{
+    padding-right: 2rem;
+}
+
+    .button#contact{
+        width: 200px;
+        margin: 2rem 5rem 0rem 0rem;
     }
 
     .footer_social-link{

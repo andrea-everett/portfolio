@@ -72,7 +72,7 @@
 
                                 <div class="home_buttons">
                                     <a download="" href="assets/pdf/andreaeverett-resume.pdf" class="button button--ghost">
-                                        Download Resume
+                                         Download Resume
                                     </a>
                                     <a href="#about" class="button">About me</a>
                                 </div>
@@ -102,15 +102,15 @@
             </section>
             
             <!--=============== ABOUT ===============-->
-            <div class="about section" id="about">
                 <h1 class="section_subtitle">Introduction</h1>
                     <h2 class="section_title">About Me</h2>
-                   
-                    <div class="about_container container grid">
-                        <div class="bio-grid">
-                                <p>My name is Andrea Everett, welcome to my page! Two years ago, I moved from Portland, OR to Charlotte, NC. When I'm not coding, you'll find me spending time with family, gardening, or baking.</p>
-                                 </div>
-                    </div>
+                    <div class="about_all">
+                                 <p class="about_description">
+                                    My name is Andrea Everett, welcome to my page! Two years ago, I moved from Portland, OR to Charlotte, NC. When I'm not coding, you'll find me spending time with family, gardening, or baking.
+                                    <br>
+                                    Frontend developer,  I create responsive web pages using CSS, HTML, and Javascript with a React.js focus.
+                                    Full stack knowlege in Node.js, Express.js, and SQL priniciples. 
+                                </p>
                         <div class="about_data">
                             <div class="about_info">
                         </div>
@@ -130,14 +130,9 @@
                                     <span class="about_subtitle">Frontend Mentor Challenges <br> Discord Community</span>
                                  </div>
                                 </div>
-                            <p class="about_description">
-                                Frontend developer,  I create responsive web pages using CSS, HTML, and Javascript with a React.js focus.
-                                Full stack knowlege in Node.js, Express.js, and SQL priniciples. 
-                            </p>
-                            <a href="#contact"  class="button">Contact Me</a>
+                            <a href="#contact"  id="about" class="button">Contact Me</a>
                             </div>
-                        </div>
-                        </div>
+                    </div>
             </section>
 
             <!--=============== SKILLS ===============-->
@@ -414,12 +409,12 @@
 
                     <form action="" class="contact_form">
                         <div class="contact_form-div">
-                            <label for="" class="contact_form-tag">Name</label>
+                            <label for="" class="contact_form-tag-name">Name</label>
                             <input type="text"  placeholder="Insert your name"class="contact_form-input">
                         </div>
 
                         <div class="contact_form-div">
-                            <label for="" class="contact_form-tag">Email</label>
+                            <label for="" class="contact_form-tag-email">Email</label>
                             <input type="text"placeholder="Insert your email" class="contact_form-input">
                         </div>
 
@@ -427,7 +422,7 @@
                             <label for="" class="contact_form-tag">Message</label>
                             <input type="text" placeholder="Write your questions"class="contact_form-input">
                         </div>
-                        <button class="button" >Send  a message</button>
+                        <button class="button" id="contact">Send  a message</button>
                     </form>
                 </div>
             </section>
@@ -451,13 +446,13 @@
                     </ul>
 
                     <ul class="footer_social">
-                        <a href=""target="_blank" class="footer_social-link">
+                        <a href="" class="footer_social-link" onclick="openWindowSocialInstagram()" ></a>
                             <i class='bx bxl-instagram'></i>
                         </a>
-                        <a href=""target="_blank" class="footer_social-link">
+                        <a href=""  class=" home_social-link" onclick="openWindowSocialTwitter()" ></a>
                             <i class='bx bxl-twitter' ></i>
                         </a>
-                        <a href=""target="_blank" class="footer_social-link">
+                        <a href=""  class=" home_social-link" onclick="openWindowSocialGit()" ></a>
                             <i class='bx bxl-github' ></i>
                         </a>
                     </ul>
