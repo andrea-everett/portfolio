@@ -227,9 +227,9 @@ body.light-theme{
     justify-content: center;
     bottom: 1rem;
     background-color: hsla(var(--second-hue), 32%, 16%, .8);
-    width:94%;
+    width:91%;
     border-radius: 4rem;
-    padding: 1rem 2.25rem;
+    margin-right: 1.5rem;
     backdrop-filter: blur(10px);
 }
 
