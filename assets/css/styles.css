@@ -75,11 +75,13 @@ body {
 h1 {
     color: white;
     font-weight: 300;
+    margin: 0;
 }
 
 h2 {
   color: var(--title-color);
   font-weight: var(--font-semibold);
+  margin: 0;
 }
 
 h3 {
@@ -173,19 +175,18 @@ body.light-theme{
   overflow: hidden;
 }
 
-/* .section {
+.section {
   padding: 2rem 0 1rem;
 }
 
 .section__title, 
 .section__subtitle {
   text-align: center;
-} */
+} 
 
-/* .section__title {
+.section__title {
   font-size: var(--h2-font-size);
   color: var(--first-color);
-  margin-bottom: 2rem;
 }
 
 .section__subtitle {
@@ -193,7 +194,7 @@ body.light-theme{
   font-size: var(--smaller-font-size);
   color: var(--text-color-light);
   margin: 2rem;
-} */
+}
 
 /*=============== HEADER & NAV===============*/
 .header {
@@ -395,13 +396,13 @@ body.light-theme{
 }
 /*=============== ABOUT ===============*/
 #about h1 {
-    margin-left: 1.5rem;
+    margin-left: 1rem;
     color: hsl(var(--second-hue), 8%, 75%);
     font-size: var(--normal-font-size);
 }
 
 #about h2{
-    margin-left: 1.5rem;
+    margin-left: 1rem;
 }
 
 .about_container{
@@ -503,8 +504,8 @@ body.light-theme{
 .skills_box {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
-    gap: 2.5rem;
+    justify-content: space-evenly;
+    gap: 1.5rem;
 }
 
 .skills_group {
@@ -684,7 +685,7 @@ body.light-theme{
 }
 
 .work_img {
-    max-width: 100%;
+    width: 100%;
     border-radius: 1rem;
     margin-bottom: 1rem;
 }
@@ -794,6 +795,7 @@ input[type="work_button"]{
 
 .contact_form {
     padding-top: 1rem;
+    padding-left: 1rem;
 }
 
 .contact_form-tag {
@@ -983,10 +985,10 @@ input[type="work_button"]{
     }
 }
 
-.contact_form{
-    width: 360px;
-    margin: 0 auto;
-}
+    .contact_form{
+        width: 360px;
+        margin: 0 auto;
+    }
 
 /* For large devices */
 @media screen and (min-width: 767px){
@@ -1104,6 +1106,7 @@ input[type="work_button"]{
 
     .work_img{
         margin-bottom: 3rem;
+        width: 400px;
     }
 
     .work_card_mobile{
