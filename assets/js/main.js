@@ -96,14 +96,14 @@ themeButton.addEventListener('click', () => {
     localStorage.setItem('selected-icon', getCurrentIcon())
 })
 /*=============== FOOTER SOCIAL LINK===============*/
-function openSocialInstagram() {
-    window.open("https://instagram.com/foreverettgirl");
+function openWindowFooterLinked() {
+    window.open("https://www.linkedin.com/in/andrea-everett-4a57a8222/");
   }
 
-  function openFooterTwitter() {
+  function openWindowFooterTwitter() {
     window.open("");
   }
 
-  function openFooterGit() {
+  function openWindowFooterGit() {
     window.open("https://github.com/andrea-everett");
   }

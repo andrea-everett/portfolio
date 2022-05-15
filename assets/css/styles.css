@@ -9,17 +9,17 @@
   /*Color mode HSL(hue, saturation, lightness)*/
   /*
        Purple: 	hsl(349, 52%, 61%)
-        Blue: hsl(207, 90%, 72%)
+        Blue: hsl(150, 90%, 72%)
         Pink: hsl(356, 66%, 75%)
         Teal: hsl(174, 63%, 62%)
   */    
-  --first-hue: 349;
-  --sat: 66%;
-  --lig: 75%;
+  --first-hue: 20;
+  --sat: 60%;
+  --lig: 88%;
   --second-hue: 219;
   --first-color: hsl(var(--first-hue), var(--sat), var(--lig));
-  --first-color-alt: hsl(var(--first-hue), var(--sat), 71%); /* -4% */
-  --title-color: hsl(var(--second-hue), 15%, 95%);
+  --first-color-alt: hsl(var(--first-hue), var(--sat), 56%); /* -4% */
+  --title-color: hsl(var(--second-hue), 15%, 40%);
   --text-color: hsl(var(--second-hue), 8%, 75%);
   --text-color-light: hsl(var(--second-hue), 4%, 55%);
   --body-color: hsl(var(--second-hue), 48%, 8%);
@@ -88,7 +88,8 @@ h2 {
 }
 
 h3 {
-    color: #f5cac3;
+    color:#B19D9E;
+    font-weight: 500;
 }
 
 ul {
@@ -117,10 +118,10 @@ button {
 
 /*========== Variables Light theme ==========*/
 body.light-theme{
-    --title-color: hsl(var(--second-hue), 15%, 30%);
-    --text-color: hsl(var(--second-hue), 8%, 35%);
+    --title-color: #B19D9E;
+    --text-color:  #B19D9E;
     --body-color: hsl(var(--second-hue), 100%, 99%);
-    --container-color: #fff;
+    --container-color:#F3DBCF;
 }
 
 /*========== 
@@ -254,6 +255,7 @@ body.light-theme{
 
 .bx-bx-moon {
     color: white;
+    margin-right: 1rem;
 }
 
 /* Active link */
@@ -347,7 +349,7 @@ body.light-theme{
     padding: .25rem;
     border-radius: .25rem;
     display: flex;
-    font-size: 1rem;
+    font-size: 1.2rem;
     transition: .4s;
 }
 
@@ -360,9 +362,10 @@ body.light-theme{
 }
 
 .home_scroll{
+    font-size: 1.2rem;
     color: var(--first-color);
     right: -1.5rem;
-    bottom: 6rem;
+    bottom: 6.5rem;
     display: grid;
     row-gap: 2.25rem;
     justify-items: center;
@@ -373,7 +376,7 @@ body.light-theme{
 }
 
 .home_scroll-name{
-    font-size: var(--smaller-font-size);
+    font-size: var(--small-font-size);
     transform: rotate(-90deg);
 
 }
@@ -402,19 +405,15 @@ body.light-theme{
 }
 /*=============== ABOUT ===============*/
 .about_container{
-    position: fixed;
     row-gap: 1rem;
     align-items: center;
 }
 
-#about.button{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100px;
-    padding-top: 1rem;
-    margin-left: 7.2rem;
-    margin-right: 3rem;
+.contact-button{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 150px;
 }
 
 .about_container img{
@@ -721,14 +720,9 @@ input[type="work_button"]{
 
 
 /*=============== CONTACT ===============*/
-#contact h1 {
-    margin-left: 1.5rem;
-    color: hsl(var(--second-hue), 8%, 75%);
-    font-size: var(--normal-font-size);
-}
-
 #contact h2 {
-    margin-left: 1.5rem;
+    margin-left: 1rem;
+    margin-bottom: 0;
 }
 
 .contact_container{
@@ -761,14 +755,10 @@ input[type="work_button"]{
     font-size: var(--font-medium);
 }
 
-h3.contact_card-title{
-    margin-left: 1.5rem;
-}
-
 .contact_card-title{
     text-align: center;
     font-size: 1.25rem;
-    margin-left: 1.5rem;
+    margin-left: 1rem;
     margin-bottom: .5rem;
     background-color: #fff;
     border-radius: 5%;
@@ -801,6 +791,10 @@ h3.contact_card-title{
     padding-left: 1rem;
 }
 
+input[type="text2"]{
+    height: 150px;
+}
+
 .contact_form-tag {
     padding-right: .2rem;
 }
@@ -819,6 +813,7 @@ h3.contact_card-title{
 
 .contact_form-tag-message{
   padding-right: .75rem;
+  
 }
 
 #contact.button {
@@ -870,14 +865,15 @@ h3.contact_card-title{
     display: flex;
     justify-content: center;
     column-gap: 1.25rem;
+    size: var(--biggest-font-size);
+    color: black;
 }
 
 .footer_social-link{
-    background-color: var(--body-color);
-    color: var(--first-color);
+    color: black;
     padding:.25rem;
     border-radius: .25rem;
-    font-size: 1rem;
+    font-size: 1.5rem;
     display: inline-flex;
 }
 
