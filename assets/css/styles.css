@@ -48,12 +48,6 @@
 }
 
 /*=============== BASE ===============*/
-/* * {
-  box-sizing: border-box;
-  padding: 0;
-  margin: 0;
-} */
-
 html {
   scroll-behavior: smooth;
 }
@@ -81,7 +75,6 @@ h1 {
 }
 
 h2 {
-  color: var(--title-color);
   font-weight: var(--font-semibold);
   margin-left: 1rem;
   margin-top: 0;
@@ -129,11 +122,12 @@ body.light-theme{
     the website, in light theme
 ==========*/
 .light-theme.scroll-header{
-    box-shadow: 0 2px 4px hsla(0, 0%, 1%, .1);
+    box-shadow: 0 2px 4px var(--title-color);
 }
 
-.light-theme.nav_menu{
-    background-color: hsla(var(--second-hue), 32%, 90%, .8);
+.light-theme .nav_menu{
+    background-color: white;
+    opacity: 50%;
 }
 
 .light-theme.section__subtitle{
@@ -416,10 +410,11 @@ body.light-theme{
         height: 150px;
 }
 
-.about_container img{
+.about_all img{
+    align-items: center;
     max-width: 60%;
     max-height: 40%;
-    padding: 3rem;
+    padding: 1rem;
     border-radius: 1.5rem;
 }
 
@@ -484,7 +479,7 @@ body.light-theme{
 .skills_title{
     font-size: var(--normal-font-size);
     font-weight: 600;
-    color: var(--first-color);
+    color:  #B19D9E;
     text-align: center;
     margin-bottom: 1.5rem;
 }
@@ -1122,7 +1117,8 @@ input[type="text2"]{
 
     .contact_container{
         display: grid;
-        grid-template-columns: 50% 50%;
+        justify-content: center;
+        align-items: center;
     }
 
     .contact_info{
@@ -1136,13 +1132,24 @@ input[type="text2"]{
     }
 
   .contact_form{
+      width: 500px;
       margin: 0;
       padding: 0;
   }
 
+ input[type="text"]{
+     width: 500px;
+     height: 50px;
+ }
+
+ input[type="text2"]{
+    width: 500px;
+    height: 100px;
+}
+
 .button#contact{
     width: 200px;
-    margin: 2rem 5rem 0rem 0rem;
+    margin: 2rem 5rem 0rem .5rem;
 }
 
 .footer_social-link{
