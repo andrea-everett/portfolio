@@ -157,6 +157,12 @@ body.light-theme{
 .light-theme h1{
     color: black;
 }
+
+.light-theme input[type="work_button"]{
+    -webkit-appearance: none;
+    background: transparent;
+    color:black;
+}
 /*=============== REUSABLE CSS CLASSES ===============*/
 .container {
   margin-left: 1rem;
@@ -396,13 +402,19 @@ body.light-theme{
 }
 /*=============== ABOUT ===============*/
 .about_container{
+    position: fixed;
     row-gap: 1rem;
     align-items: center;
 }
 
 #about.button{
-   margin-left: 8.5rem;
-   margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    padding-top: 1rem;
+    margin-left: 7.2rem;
+    margin-right: 3rem;
 }
 
 .about_container img{
@@ -698,7 +710,7 @@ body.light-theme{
 input[type="work_button"]{
     -webkit-appearance: none;
     background: transparent;
-    color:white;
+    color: white;
 }
 
 /* Active item work*/
@@ -725,12 +737,14 @@ input[type="work_button"]{
 }
 
 .contact_info{
+    width: 250px;
     margin: 1rem;
     display: grid;
     gap: 1rem;
 }
 
 .contact_card{
+    width: 100%;
     background-color: var(--container-color);
     padding: 1rem;
     border-radius: .75rem;
@@ -747,9 +761,14 @@ input[type="work_button"]{
     font-size: var(--font-medium);
 }
 
+h3.contact_card-title{
+    margin-left: 1.5rem;
+}
+
 .contact_card-title{
     text-align: center;
     font-size: 1.25rem;
+    margin-left: 1.5rem;
     margin-bottom: .5rem;
     background-color: #fff;
     border-radius: 5%;
@@ -1108,6 +1127,16 @@ input[type="work_button"]{
     .contact_container{
         display: grid;
         grid-template-columns: 50% 50%;
+    }
+
+    .contact_info{
+        width: 100%;
+        justify-content: center;
+        margin: 0;
+    }
+
+    .contact_card-title{
+        align-items: center;
     }
 
   .contact_form{

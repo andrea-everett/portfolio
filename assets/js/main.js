@@ -45,7 +45,7 @@ function activeWork(){
     this.classList.add('active-work')
 }
 
-linkWork.forEach(L=> l.add('click', activeWork))
+linkWork.forEach(L=> L.classList.add('click', 'active-work'))
 /*=============== HOME SOCIAL LINKS ===============*/
 function openWindowLinkedIn() {
     window.open("https://www.linkedin.com/in/andrea-everett-4a57a8222/");
@@ -75,7 +75,7 @@ function openWindow() {
 /*=============== LIGHT DARK THEME ===============*/ 
 const themeButton = document.getElementById('theme-button')
 const lightTheme = 'light-theme'
-const iconTheme = 'bx-sun'
+const iconTheme = 'bx bx-sun'
 
 const selectedTheme = localStorage.getItem('selected-theme')
 const selectedIcon = localStorage.getItem('selected-icon')
