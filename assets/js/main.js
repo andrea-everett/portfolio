@@ -69,7 +69,7 @@ function openWindow1() {
 }
 
 function openWindow2() {
-  window.open("https://andrea-everett.github.io/All-Projects/");
+  window.open("https://andrea-everett.github.io/portfolio-projects/");
 }
 
 /*=============== LIGHT DARK THEME ===============*/
