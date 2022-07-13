@@ -1,5 +1,6 @@
 /*=============== GOOGLE FONTS ===============*/
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+@import url('https://fonts.googleapis.com/css?family=Montserrat:900');
 
 /*=============== VARIABLES CSS ===============*/
 :root {
@@ -48,6 +49,10 @@
     --z-modal: 1000;
 }
 
+/* Background */
+
+
+
 /*=============== BASE ===============*/
 html {
     scroll-behavior: smooth;
@@ -65,7 +70,6 @@ body {
     background-color: var(--body-color);
     color: var(--text-color);
     transition: .4s;
-    /* for light mode animation */
 }
 
 
@@ -228,8 +232,9 @@ body.light-theme {
 .nav_menu {
     position: fixed;
     justify-content: center;
-    bottom: 1rem;
+    bottom: .5rem;
     background-color: hsla(var(--second-hue), 32%, 16%, .8);
+    height: 10%;
     width: 82%;
     border-radius: 4rem;
     margin-right: 1.5rem;
@@ -267,6 +272,42 @@ body.light-theme {
     box-shadow: 0 4px 4px hsla(0, 0%, 4%, .3);
 }
 
+
+.web-title {
+    margin: 0;
+    padding-top: 0;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15vh;
+    letter-spacing: 1vw;
+    position: absolute;
+    top: 30vh;
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
+
+    /* background: url('https://i.pinimg.com/originals/9f/9c/c5/9f9cc5217bb04790e5fb852b665ca2ff.jpg'); */
+    background: url('https://thumbs.dreamstime.com/b/tropical-flower-pattern-seamless-flowers-blossom-flowers-nature-background-vector-illustration-61142748.jpg');
+    /* background-size: auto 200%; */
+    background-clip: text;
+    /* text-fill-color: transparent; */
+    /* -webkit-background-clip: text; */
+    -webkit-text-fill-color: transparent;
+    animation: shine 8s linear infinite;
+}
+
+@keyframes shine {
+    from {
+        background-position: center 0;
+    }
+
+    to {
+        background-position: center 200%;
+    }
+}
+
+
+
+
 /*=============== HOME ===============*/
 .home_container {
     position: relative;
@@ -292,7 +333,7 @@ body.light-theme {
 
 .home_education {
     color: var(--text-color);
-    margin-bottom: 2.5rem;
+    margin-bottom: 1rem;
     margin-top: 0;
 }
 
@@ -341,7 +382,7 @@ body.light-theme {
     color: white;
 }
 
-.home_handle {
+/* .home_handle {
     width: 90px;
     height: 130px;
     margin-bottom: 1rem;
@@ -371,7 +412,7 @@ body.light-theme {
             hsla(var(--first-hue), var(--sat), var(--lig), .2));
     border-radius: 10rem 5rem 5rem 1rem;
     opacity: 30%;
-}
+} */
 
 .home_buttons {
     justify-content: center;
