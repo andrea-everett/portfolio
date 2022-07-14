@@ -20,10 +20,10 @@ modalBtns.forEach((mb, i) => {
   })
 })
 
-modalClose.forEach((mc) => {
-  mc.addEventListener('click', () => {
-    modalViews.forEach((mv) => {
-      mv.classList.remove('active-modal')
+modalClose.forEach((window) => {
+  window.addEventListener('click', () => {
+    modalViews.forEach((window) => {
+      window.classList.remove('active-modal');
     })
   })
 })

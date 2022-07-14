@@ -734,6 +734,10 @@ body.light-theme {
     visibility: visible;
 }
 
+.js-hidden {
+    display: none;
+}
+
 /*=============== WORK ===============*/
 #work h1 {
     margin-left: 1.5rem;
