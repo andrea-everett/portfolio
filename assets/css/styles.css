@@ -72,7 +72,6 @@ body {
     transition: .4s;
 }
 
-
 h1 {
     color: white;
     font-weight: 300;
@@ -289,8 +288,6 @@ body.light-theme {
     background: url('https://thumbs.dreamstime.com/b/tropical-flower-pattern-seamless-flowers-blossom-flowers-nature-background-vector-illustration-61142748.jpg');
     /* background-size: auto 200%; */
     background-clip: text;
-    /* text-fill-color: transparent; */
-    /* -webkit-background-clip: text; */
     -webkit-text-fill-color: transparent;
     animation: shine 8s linear infinite;
 }
@@ -357,7 +354,7 @@ body.light-theme {
     background-size: 200% auto;
     color: #fff;
     background-clip: text;
-    text-fill-color: transparent;
+    color: transparent;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     animation: textclip 2s linear infinite;
