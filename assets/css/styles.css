@@ -283,10 +283,7 @@ body.light-theme {
     left: 50%;
     transform: translateX(-50%);
     color: white;
-
-    /* background: url('https://i.pinimg.com/originals/9f/9c/c5/9f9cc5217bb04790e5fb852b665ca2ff.jpg'); */
     background: url('https://thumbs.dreamstime.com/b/tropical-flower-pattern-seamless-flowers-blossom-flowers-nature-background-vector-illustration-61142748.jpg');
-    /* background-size: auto 200%; */
     background-clip: text;
     -webkit-text-fill-color: transparent;
     animation: shine 8s linear infinite;
@@ -301,9 +298,6 @@ body.light-theme {
         background-position: center 200%;
     }
 }
-
-
-
 
 /*=============== HOME ===============*/
 .home_container {
