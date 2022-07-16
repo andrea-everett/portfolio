@@ -763,7 +763,8 @@ body.light-theme {
 }
 
 .work_img {
-    width: 100%;
+    width: 70%;
+    height: 50%;
     border-radius: 1rem;
     margin-bottom: 1rem;
 }
