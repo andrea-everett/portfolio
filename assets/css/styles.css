@@ -765,7 +765,7 @@ body.light-theme {
 .work_img {
     width: 70%;
     height: 50%;
-    border-radius: 1rem;
+    border-radius: .9rem;
     margin-bottom: 1rem;
 }
 
