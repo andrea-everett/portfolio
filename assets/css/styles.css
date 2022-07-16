@@ -1019,6 +1019,10 @@ input[type="text2"] {
         font-size: .813rem;
     }
 
+    .services_container {
+        grid-template-columns: 250px;
+    }
+
     .work_item {
         font-size: .813rem;
     }
