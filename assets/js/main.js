@@ -72,6 +72,20 @@ function openWindow2() {
   window.open(" https://andrea-everett.github.io/all-projects/");
 }
 
+
+// ================CODE LINKS ==========================
+function openWindow3() {
+  window.open("https://github.com/andrea-everett/sunnyside-challenge");
+}
+
+function openWindow4() {
+  window.open("https://github.com/andrea-everett/front-end");
+}
+
+function openWindow5() {
+  window.open("https://github.com/andrea-everett/all-projects");
+}
+
 /*=============== LIGHT DARK THEME ===============*/
 const themeButton = document.getElementById('theme-button')
 const lightTheme = 'light-theme'

@@ -35,11 +35,6 @@
                         </a>
                     </li>
                     <li class="nav_item">
-                        <a href="#about" class="nav_link" active-link>
-                            <i class='bx bx-user'></i>
-                        </a>
-                    </li>
-                    <li class="nav_item">
                         <a href="#skills" class="nav_link">
                             <i class='bx bx-pencil'></i>
                         </a>
@@ -71,52 +66,48 @@
                     <div class="home_data">
                         <span class="home_greeting">Hello, I'm </span>
                         <h1 class="home_name">Andrea Everett</h1>
-                        <h3 class="home_education">Frontend Developer</h3>
+                        <!-- <h3 class="home_education">Frontend Developer</h3> -->
                         <div class="home_buttons">
                             <a download="" href="assets/pdf/andreaeverett-resume-final.pdf"
                                 class="button button--ghost">
                                 Download Resume
                             </a>
-                            <!-- <a href="#about" class="button">About me</a> -->
+                            <a href="#about" class="button">About me</a>
                         </div>
                     </div>
 
                     <div class="row">
-                        <div class="web-title">Front End Developer</div>
+
                         <div class="abstract">
-                            <div class="home_handle">
-                                <!-- <img src="assets/img/Big-Print-Artifact.png"> -->
+                            <div class="slide-left">
+                                <p>Creating intutive & responsive</p>
                             </div>
-                            <div class="home_handle1">
-                                <!-- <img src="assets/img/Big-Print-Artifact.png"> -->
-                            </div>
-                            <div class="home_handle2">
-                                <!-- <img src="assets/img/Big-Print-Artifact.png"> -->
-                            </div>
-        </section>
+                        </div>
+                        <div class="slide-right">
+                            <p>web & mobile sites.</p>
+                        </div>
 
-        <div class="home_social">
-            <a href="" class=" home_social-link" onclick="openWindowLinkedIn()">
-                <i class='bx bxl-linkedin'></i>
-            </a>
-            <a href="" class=" home_social-link" onclick="openWindowGithub()">
-                <i class='bx bxl-github'></i>
-            </a>
-            <a href="" class=" home_social-link" onclick="openWindowTwitter()">
-                <i class='bx bxl-twitter'></i>
-            </a>
-        </div>
+                        <div class="home_social">
+                            <a href="" class=" home_social-link" onclick="openWindowLinkedIn()">
+                                <i class='bx bxl-linkedin'></i>
+                            </a>
+                            <a href="" class=" home_social-link" onclick="openWindowGithub()">
+                                <i class='bx bxl-github'></i>
+                            </a>
+                            <a href="" class=" home_social-link" onclick="openWindowTwitter()">
+                                <i class='bx bxl-twitter'></i>
+                            </a>
+                        </div>
 
-        <!-- <a href="#about" class="home_scroll">
+                        <!-- <a href="#about" class="home_scroll">
             <i class='bx bxs-mouse-alt'></i>
             <span class="home_scroll-name">Scroll Down</span> -->
-        </a>
-        </div>
-        </div>
+                        </a>
+                    </div>
+                </div>
         </section>
 
         <!--=============== ABOUT ===============-->
-        <!-- <h1 class="section_subtitle">Introduction</h1> -->
         <h2 class="section_title">About Me</h2>
         <div class="about_all">
             <p class="about_description">
@@ -367,16 +358,24 @@
 
                     <h3 class="work_title">Reponsive Projects</h3>
 
-                    <input type="work_button" value="Live URL" onclick="openWindow()">
-                    <i class='bx bx-right-arrow-alt'></i>
+                    <div class="buttons">
+                        <input type="work_button" value="Visit Site" onclick="openWindow()">
+
+                        <input type="code_button" value="Github Code" onclick="openWindow3()">
+                    </div>
                     </a>
                 </div>
+
                 <div class="work_card_ design mix web">
                     <img src="assets/img/face-detection.png" alt="" class="work_img">
 
                     <h3 class="work_title">Fullstack Projects</h3>
-                    <input type="work_button" value="Live URL" onclick="openWindow1()">
-                    <i class='bx bx-right-arrow-alt'></i>
+
+                    <div class="buttons">
+                        <input type="work_button" value="Visit Site" onclick="openWindow1()">
+
+                        <input type="code_button" value="Github Code" onclick="openWindow4()">
+                    </div>
                     </a>
                 </div>
                 <div class="work_card_design mix ">
@@ -384,8 +383,11 @@
 
                     <h3 class="work_title">All Projects</h3>
 
-                    <input type="work_button" value="Live URL" onclick="openWindow2()">
-                    <i class='bx bx-right-arrow-alt'></i>
+                    <div class="buttons">
+                        <input type="work_button" value="Visit Site" onclick="openWindow2()">
+
+                        <input type="code_button" value="Github Code" onclick="openWindow5()">
+                    </div>
                     </a>
                 </div>
             </div>

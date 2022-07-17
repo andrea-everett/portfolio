@@ -164,6 +164,12 @@ body.light-theme {
     color: black;
 }
 
+.light-theme input[type="code_button"] {
+    -webkit-appearance: none;
+    background: transparent;
+    color: black;
+}
+
 /*=============== REUSABLE CSS CLASSES ===============*/
 .container {
     margin-left: 1rem;
@@ -234,9 +240,8 @@ body.light-theme {
     bottom: .5rem;
     background-color: hsla(var(--second-hue), 32%, 16%, .8);
     height: 10%;
-    width: 82%;
+    width: 80%;
     border-radius: 4rem;
-    margin-right: 1.5rem;
     backdrop-filter: blur(10px);
 }
 
@@ -244,6 +249,7 @@ body.light-theme {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding-left: 3px;
 }
 
 .nav_link {
@@ -271,43 +277,16 @@ body.light-theme {
     box-shadow: 0 4px 4px hsla(0, 0%, 4%, .3);
 }
 
-
-.web-title {
-    margin: 0;
-    padding-top: 0;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 15vh;
-    letter-spacing: 1vw;
-    position: absolute;
-    top: 30vh;
-    left: 50%;
-    transform: translateX(-50%);
-    color: white;
-    background: url('https://thumbs.dreamstime.com/b/tropical-flower-pattern-seamless-flowers-blossom-flowers-nature-background-vector-illustration-61142748.jpg');
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-    animation: shine 8s linear infinite;
-}
-
-@keyframes shine {
-    from {
-        background-position: center 0;
-    }
-
-    to {
-        background-position: center 200%;
-    }
-}
-
 /*=============== HOME ===============*/
 .home_container {
     position: relative;
     row-gap: relative;
-    padding-top: 2rem;
+    padding-top: 0rem;
 }
 
 .home_data {
     text-align: center;
+    padding-bottom: 2.5rem;
 }
 
 .home_greeting,
@@ -334,7 +313,7 @@ body.light-theme {
 
 .home_name {
     position: absolute;
-    top: 8%;
+    top: 3%;
     left: 49%;
     transform: translate(-50%, -50%);
     text-transform: uppercase;
@@ -362,52 +341,67 @@ body.light-theme {
     }
 }
 
-.abstract {
-    display: grid;
-    grid-template-columns: 200px 200px 200px;
-    column-gap: 200px;
-    justify-content: center;
-    padding-top: 2rem;
-    position: relative;
-    text-align: center;
-    color: white;
+.row {
+    padding-bottom: 6rem;
 }
 
-/* .home_handle {
-    width: 90px;
-    height: 130px;
-    margin-bottom: 1rem;
-    background: linear-gradient(160deg,
-            hsla(var(--first-hue), var(--sat), var(--lig), 1),
-            hsla(var(--first-hue), var(--sat), var(--lig), .2));
-    border-radius: 5rem 10rem 5rem 10rem;
-    opacity: 50%;
+div.slide-left {
+    color: palevioletred;
+    font-size: 45px;
+    width: 250%;
+    margin-left: 150px;
+    overflow: hidden;
 }
 
-.home_handle1 {
-    width: 230px;
-    height: 350px;
-    background: linear-gradient(160deg,
-            hsla(var(--first-hue), var(--sat), var(--lig), 1),
-            hsla(var(--first-hue), var(--sat), var(--lig), .2));
-    border-radius: 5rem 10rem 5rem 1rem;
-    transform: scaleY(-1);
-    opacity: 35%;
+div.slide-left p {
+    animation: slide-left 8s;
+    margin-bottom: 0px;
 }
 
-.home_handle2 {
-    width: 250px;
-    height: 400px;
-    background: linear-gradient(160deg,
-            hsla(var(--first-hue), var(--sat), var(--lig), 1),
-            hsla(var(--first-hue), var(--sat), var(--lig), .2));
-    border-radius: 10rem 5rem 5rem 1rem;
-    opacity: 30%;
-} */
+@keyframes slide-left {
+    from {
+        background-color: palevioletred;
+        text-align: right;
+        margin-right: 20px;
+        width: 400%;
+    }
+
+    to {
+        margin-right: 50%;
+        width: 100%;
+    }
+}
+
+div.slide-right {
+    color: lightpink;
+    font-size: 80px;
+    width: 100%;
+    margin-left: 470px;
+    overflow: hidden;
+}
+
+div.slide-right p {
+    font-family: 'Raleway', sans-serif;
+    animation: slide-left 10s;
+    margin-top: 0px;
+}
+
+@keyframes slide-right {
+    from {
+        margin-left: 50px;
+        width: 300%;
+    }
+
+    to {
+        margin-right: 0%;
+        width: 100%;
+    }
+}
 
 .home_buttons {
     justify-content: center;
     align-items: center;
+    display: flex;
 }
 
 .home_social,
@@ -416,7 +410,7 @@ body.light-theme {
 }
 
 .home_social {
-    bottom: 5rem;
+    bottom: 20rem;
     left: 0;
     display: grid;
     row-gap: .5rem;
@@ -474,7 +468,7 @@ body.light-theme {
 }
 
 .button:hover {
-    background-color: var(--first-color-alt);
+    background-color: palevioletred;
     color: var(--body-color);
 }
 
@@ -541,7 +535,7 @@ body.light-theme {
 .about_description {
     margin: 1rem;
     padding: 0;
-    line-height: 18px;
+    line-height: 25px;
 }
 
 /*=============== SKILLS ===============*/
@@ -757,14 +751,15 @@ body.light-theme {
 }
 
 .work_card {
+    display: grid;
+    grid-template-columns: 1;
     background-color: var(--container-color);
     padding: .5rem;
     border-radius: 1rem;
 }
 
 .work_img {
-    width: 70%;
-    height: 50%;
+    width: 40px;
     border-radius: .9rem;
     margin-bottom: 1rem;
 }
@@ -778,7 +773,6 @@ body.light-theme {
 .work_button {
     background-color: none;
     width: max-content;
-    /* color: var(--first-color); */
     font-size: var(--small-font-size);
     display: flex;
     align-items: center;
@@ -795,7 +789,20 @@ body.light-theme {
     transition: .4s;
 }
 
+.buttons {
+    display: grid;
+    width: 40px;
+}
+
 input[type="work_button"] {
+    margin-top: .5em;
+    -webkit-appearance: none;
+    background: transparent;
+    color: white;
+}
+
+input[type="code_button"] {
+    margin-top: .5rem;
     -webkit-appearance: none;
     background: transparent;
     color: white;
@@ -953,7 +960,7 @@ input[type="text2"] {
 
 .footer_social {
     display: flex;
-    justify-content: center;
+    margin-left: 25px;
     column-gap: 1.25rem;
     size: var(--biggest-font-size);
     color: black;
@@ -993,9 +1000,69 @@ input[type="text2"] {
 
 /*=============== BREAKPOINTS ===============*/
 /* For small devices */
-@media screen and (min-width: 320px) {
+@media screen and (max-width: 320px) {
     .nav_menu {
         padding: 1rem 1.5rem;
+    }
+
+    .home_name {
+        font-size: 15px;
+    }
+
+    .home_buttons {
+        justify-content: left;
+        gap: 3px;
+    }
+
+    div.slide-left {
+        font-size: 20px;
+        width: 80%;
+        margin-left: 30px;
+        overflow: hidden;
+    }
+
+    div.slide-left p {
+        animation: slide-left 10s;
+        margin-bottom: 0px;
+    }
+
+    @keyframes slide-left {
+        from {
+            text-align: right;
+            margin-right: 8px;
+            width: 80%;
+        }
+
+        to {
+            margin-right: 50%;
+            width: 80%;
+        }
+    }
+
+    div.slide-right {
+        color: lightpink;
+        font-size: 22px;
+        width: 75%;
+        margin-left: 50px;
+        overflow: hidden;
+    }
+
+    div.slide-right p {
+        font-family: 'Raleway', sans-serif;
+        animation: slide-left 10s;
+        margin-top: 25px;
+    }
+
+    @keyframes slide-right {
+        from {
+            margin-left: 50px;
+            width: 75%;
+        }
+
+        to {
+            margin-right: 0%;
+            width: 100%;
+        }
     }
 
     .home_handle {
@@ -1021,6 +1088,10 @@ input[type="text2"] {
 
     .services_container {
         grid-template-columns: 250px;
+    }
+
+    .work_img {
+        width: 200px;
     }
 
     .work_item {
