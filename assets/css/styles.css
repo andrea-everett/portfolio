@@ -737,7 +737,6 @@ div.slide-right p {
 .work_filters {
     display: flex;
     justify-content: center;
-    align-items: center;
     column-gap: .75rem;
     margin-bottom: 2rem;
 }
@@ -1000,7 +999,7 @@ input[type="text2"] {
 
 /*=============== BREAKPOINTS ===============*/
 /* For small devices */
-@media screen and (min-width: 320px) {
+@media screen and (min-width: 375px) {
     .nav_menu {
         padding: 1rem 1.5rem;
     }
@@ -1044,9 +1043,10 @@ input[type="text2"] {
 
     .work_filters {
         column-gap: .25rem;
+        width: 80%;
     }
 
-    @media screen and (max-width: 320px) {
+    /* @media screen and (max-width: 375px) {
         .home_name {
             font-size: 14px;
         }
@@ -1107,7 +1107,7 @@ input[type="text2"] {
                 width: 100%;
             }
         }
-    }
+    } */
 
     /* For medium devices */
     @media screen and (min-width: 576px) {
