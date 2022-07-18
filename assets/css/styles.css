@@ -1042,8 +1042,9 @@ input[type="text2"] {
     }
 
     .work_filters {
+        margin-left: 1.5rem;
         column-gap: .25rem;
-        width: 80%;
+        width: 60%;
     }
 
     @media screen and (max-width: 576px) {
