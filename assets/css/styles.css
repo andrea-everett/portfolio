@@ -104,13 +104,13 @@ a {
 button {
     width: 100px;
     height: 25px;
-    border-radius: 13%;
-    gap: 1.5rem;
+    border-radius: 35%;
+    margin: 3px;
     cursor: pointer;
-    outline: none;
+    border: none;
     font-size: 15px;
     color: black;
-    background-color: #efa9b9;
+    background-color: palevioletred;
 }
 
 /*=============== THEME ===============*/
@@ -733,7 +733,7 @@ div.slide-right p {
 }
 
 #work h2 {
-    margin-left: 1.5rem;
+    margin-left: .5rem;
 }
 
 .work_filters {
@@ -798,8 +798,8 @@ div.slide-right p {
 
 /* Active item work*/
 .active-work {
-    background-color: var(--first-color);
-    color: var(--body-color);
+    background-color: palevioletred;
+    color: black;
 }
 
 
@@ -1110,6 +1110,11 @@ input[type="text2"] {
             }
         }
     }
+
+    .services_modal-info {
+        font-size: 18px;
+    }
+
 
     /* For medium devices */
     @media screen and (min-width: 576px) {
