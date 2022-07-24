@@ -921,7 +921,7 @@ input[type="text2"] {
 
 .footer_title,
 .footer_link {
-    color: var(--body-color);
+    color: black;
     margin-left: 0;
 }
 
