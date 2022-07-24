@@ -30,14 +30,14 @@
     /*========== Font and typography ==========*/
     /*.5rem = 8px | 1rem = 16px ...*/
     --body-font: 'Poppins', sans-serif;
-    --biggest-font-size: 1.75rem;
-    --h1-font-size: 1.5rem;
-    --h2-font-size: 1.25rem;
-    --h3-font-size: 1rem;
-    --normal-font-size: .938rem;
-    --small-font-size: .813rem;
+    --biggest-font-size: 3rem;
+    --h1-font-size: 2rem;
+    --h2-font-size: 2rem;
+    --h3-font-size: 3rem;
+    --normal-font-size: 1.3rem;
+    --small-font-size: 1.8rem;
     --smaller-font-size: .75rem;
-    --tiny-font-size: .625rem;
+    --tiny-font-size: .75rem;
 
     /*========== Font weight ==========*/
     --font-medium: 500;
@@ -63,7 +63,8 @@ button,
 input,
 textarea {
     font-family: var(--body-font);
-    font-size: var(--normal-font-size);
+    font-size: 15px;
+    column-gap: 2rem;
 }
 
 body {
@@ -77,10 +78,11 @@ h1 {
     font-weight: 300;
     margin-left: 1rem;
     margin-bottom: 0;
-    font-size: var(--smaller-font-size);
+    font-size: var(--small-font-size);
 }
 
 h2 {
+    font-size: var(--normal-font-size);
     font-weight: var(--font-semibold);
     margin-left: 1rem;
     margin-top: 0;
@@ -100,9 +102,15 @@ a {
 }
 
 button {
+    width: 100px;
+    height: 25px;
+    border-radius: 13%;
+    gap: 1.5rem;
     cursor: pointer;
-    border: none;
     outline: none;
+    font-size: 15px;
+    color: black;
+    background-color: #efa9b9;
 }
 
 /*=============== THEME ===============*/
@@ -154,21 +162,11 @@ body.light-theme {
     color: var(--first-color)
 }
 
-.light-theme h1 {
+/* .light-theme h1 {
     color: black;
-}
+} */
 
-.light-theme input[type="work_button"] {
-    -webkit-appearance: none;
-    background: transparent;
-    color: black;
-}
 
-.light-theme input[type="code_button"] {
-    -webkit-appearance: none;
-    background: transparent;
-    color: black;
-}
 
 /*=============== REUSABLE CSS CLASSES ===============*/
 .container {
@@ -249,7 +247,7 @@ body.light-theme {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-left: 3px;
+    padding: .5px 5px 5px 5px;
 }
 
 .nav_link {
@@ -286,19 +284,18 @@ body.light-theme {
 
 .home_data {
     text-align: center;
-    padding-bottom: 2.5rem;
 }
 
 .home_greeting,
 .home_education {
-    font-size: var(--small-ont-size);
+    font-size: var(--small-font-size);
     font-weight: var(--font-medium);
 }
 
 .home_greeting {
     display: block;
     color: var(--title-color);
-    margin-bottom: 3rem;
+    margin-bottom: 2rem;
 }
 
 .home_education {
@@ -313,7 +310,7 @@ body.light-theme {
 
 .home_name {
     position: absolute;
-    top: 3%;
+    top: 5%;
     left: 49%;
     transform: translate(-50%, -50%);
     text-transform: uppercase;
@@ -402,6 +399,8 @@ div.slide-right p {
     justify-content: center;
     align-items: center;
     display: flex;
+    font-size: var(--tiny-font-size);
+    column-gap: .5rem;
 }
 
 .home_social,
@@ -419,11 +418,11 @@ div.slide-right p {
 .home_social-link {
     width: max-content;
     background-color: var(--container-color);
-    color: var(--first-color);
+    color: palevioletred;
     padding: .25rem;
     border-radius: .25rem;
     display: flex;
-    font-size: 1.2rem;
+    font-size: 3rem;
     transition: .4s;
 }
 
@@ -526,16 +525,19 @@ div.slide-right p {
 
 .about_title {
     font-size: var(--small-font-size);
+    margin-bottom: .5rem;
+    margin-top: 0;
 }
 
 .about_subtitle {
     font-size: var(--tiny-font-size);
+    line-height: 1.5rem;
 }
 
 .about_description {
     margin: 1rem;
     padding: 0;
-    line-height: 25px;
+    line-height: 28px;
 }
 
 /*=============== SKILLS ===============*/
@@ -625,13 +627,13 @@ div.slide-right p {
 }
 
 .services_title {
-    font-size: var(--h3-font-size);
+    font-size: var(--small-font-size);
     margin-bottom: 2.5rem;
 }
 
 .services_button {
     color: #84a59d;
-    font-size: var(--small-font-size);
+    font-size: var(--normal-font-size);
     display: flex;
     align-items: center;
     column-gap: .25rem;
@@ -680,7 +682,7 @@ div.slide-right p {
 }
 
 .services_modal-description {
-    font-size: var(--small-font-size);
+    font-size: 18px;
     margin-bottom: 2rem;
 }
 
@@ -701,7 +703,7 @@ div.slide-right p {
 }
 
 .services_modal-info {
-    font-size: var(--small-font-size);
+    font-size: 25px;
 }
 
 .services_modal-close {
@@ -793,19 +795,6 @@ div.slide-right p {
     width: 40px;
 }
 
-input[type="work_button"] {
-    margin-top: .5em;
-    -webkit-appearance: none;
-    background: transparent;
-    color: white;
-}
-
-input[type="code_button"] {
-    margin-top: .5rem;
-    -webkit-appearance: none;
-    background: transparent;
-    color: white;
-}
 
 /* Active item work*/
 .active-work {
@@ -961,7 +950,7 @@ input[type="text2"] {
     display: flex;
     margin-left: 25px;
     column-gap: 1.25rem;
-    size: var(--biggest-font-size);
+    size: 100px;
     color: black;
 }
 
@@ -1053,14 +1042,19 @@ input[type="text2"] {
             display: none;
         }
 
+        .home_greeting {
+            font-size: 17px;
+        }
+
         .home_name {
-            font-size: 14px;
-            margin: 20px 7px;
+            font-size: 19px;
+            margin: 15px 7px;
         }
 
         .home_buttons {
             justify-content: center;
             margin-top: 50px;
+            font-size: 10px;
             gap: 3px;
         }
 
