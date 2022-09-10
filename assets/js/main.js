@@ -61,7 +61,7 @@ function openWindowTwitter() {
 
 /*=============== SCROLL SECTIONS ACTIVE LINK ===============*/
 function openWindow() {
-  window.open("https://andrea-everett.github.io/sunnyside-challenge/");
+  window.open(" https://andrea-everett.github.io/garden-store/");
 }
 
 function openWindow1() {
@@ -69,8 +69,10 @@ function openWindow1() {
 }
 
 function openWindow2() {
-  window.open(" https://andrea-everett.github.io/all-projects/");
+  window.open("https://andrea-everett.github.io/sunnyside-challenge/");
 }
+
+
 
 
 // ================CODE LINKS ==========================
