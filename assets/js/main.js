@@ -77,7 +77,7 @@ function openWindow2() {
 
 // ================CODE LINKS ==========================
 function openWindow3() {
-  window.open("https://github.com/andrea-everett/sunnyside-challenge");
+  window.open("https://andrea-everett.github.io/garden-store/");
 }
 
 function openWindow4() {
@@ -85,7 +85,7 @@ function openWindow4() {
 }
 
 function openWindow5() {
-  window.open("https://github.com/andrea-everett/all-projects");
+  window.open("https://github.com/andrea-everett/sunnyside-challenge");
 }
 
 /*=============== LIGHT DARK THEME ===============*/

@@ -736,8 +736,14 @@ div.slide-right p {
     margin-left: .5rem;
 }
 
+.work_filter_section {
+
+}
+
 .work_filters {
-  margin-left: 200px;
+  height: 100px;
+  text-align: center;
+  margin: 0;
 }
 
 .work_items {
@@ -1028,9 +1034,7 @@ input[type="text2"] {
     }
 
     .work_filters {
-        margin-left: 1.5rem;
         column-gap: .25rem;
-        width: 60%;
     }
 
     @media screen and (max-width: 576px) {
