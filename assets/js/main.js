@@ -61,7 +61,7 @@ function openWindowTwitter() {
 
 /*=============== SCROLL SECTIONS ACTIVE LINK ===============*/
 function openWindow() {
-  window.open(" https://andrea-everett.github.io/garden-store/");
+  window.open("https://stately-moonbeam-f6d88b.netlify.app");
 }
 
 function openWindow1() {
