@@ -61,7 +61,7 @@ function openWindowTwitter() {
 
 /*=============== SCROLL SECTIONS ACTIVE LINK ===============*/
 function openWindow() {
-  window.open("https://stately-moonbeam-f6d88b.netlify.app");
+  window.open("https://tasty-rabbit-production.up.railway.app");
 }
 
 function openWindow1() {
