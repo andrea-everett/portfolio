@@ -61,7 +61,7 @@ function openWindowTwitter() {
 
 /*=============== SCROLL SECTIONS ACTIVE LINK ===============*/
 function openWindow() {
-  window.open("https://tasty-rabbit-production.up.railway.app");
+  window.open("garden-store-production.up.railway.app");
 }
 
 function openWindow1() {
