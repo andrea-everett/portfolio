@@ -77,6 +77,10 @@ function openWindow2() {
 
 // ================CODE LINKS ==========================
 function openWindow3() {
+  window.open("https://andrea-everett.github.io/pinterest-final/");
+}
+
+function openWindow3() {
   window.open("https://andrea-everett.github.io/garden-store/");
 }
 
