@@ -61,34 +61,36 @@ function openWindowTwitter() {
 
 /*=============== SCROLL SECTIONS ACTIVE LINK ===============*/
 function openWindow() {
-  window.open("https://garden-store-production.up.railway.app");
+  window.open("https://github.com/andrea-everett/pinterest-final.git");
 }
 
 function openWindow1() {
-  window.open("https://detection-front.herokuapp.com");
+  window.open("https://github.com/andrea-everett/garden-store.git");
 }
 
 function openWindow2() {
+  window.open("https://github.com/andrea-everett/front-end");
+}
+
+function openWindow3() {
   window.open("https://andrea-everett.github.io/sunnyside-challenge/");
 }
 
 
-
-
 // ================CODE LINKS ==========================
-function openWindow3() {
-  window.open("https://andrea-everett.github.io/pinterest-final/");
-}
-
-function openWindow3() {
-  window.open("https://andrea-everett.github.io/garden-store/");
-}
-
 function openWindow4() {
-  window.open("https://github.com/andrea-everett/front-end");
+  window.open("https://pinterest-final-production.up.railway.app");
 }
 
 function openWindow5() {
+  window.open("https://garden-store-production.up.railway.app");
+}
+
+function openWindow6() {
+  window.open("https://detection-front.herokuapp.com");
+}
+
+function openWindow7() {
   window.open("https://github.com/andrea-everett/sunnyside-challenge");
 }
 
