@@ -164,12 +164,58 @@ body.light-theme {
 .light-theme.home_scroll .light-theme.button .light-theme.button:hover {
   color: var(--first-color);
 }
-.light-theme button {
-  background-color: #2b3a55;
+.light-theme .button {
+  background-color: #b1006a;
+  color: white;
 }
-/* .light-theme h1 {
-    color: black;
-} */
+
+.light-theme .about_box, .light-theme .services_card, .light-theme .active-work, .light-theme .footer_container , 
+.light-theme .slide-right,.light-theme .services_card {
+  background-color: #b1006a;
+}
+
+.light-theme .home_social-link, .light-theme  button{
+  background-color:#b1006a;
+  color: white;
+}
+
+.light-theme .bx, .light-theme .about_title, .light-theme .about_subtitle, .services_title{
+  color: #FFFFFF;
+}
+
+.light-theme .active-work {
+  color: #FFFFFF;
+}
+
+.light-theme .slide-left {
+  color: #c7006e;
+  background-color: #ffc77d;
+  overflow: hidden;
+  color: transparent;
+  -webkit-background-clip: text;
+  animation: textclip 2s linear infinite;
+}
+
+.light-theme .slide-right {
+  color:  #b1006a;
+  background-color: #03dac5;
+  background-clip: text;
+  color: transparent;
+  -webkit-background-clip: text;
+  animation: textclip 2s linear infinite;
+}
+
+.light-theme .home_greeting {
+  color:  #03dac5;
+}
+
+.light-theme .services_button {
+  color: #ee6002;
+}
+
+.light-theme .about_description, .work_title {
+  color: black;
+}
 
 /*=============== REUSABLE CSS CLASSES ===============*/
 .container {
@@ -322,8 +368,8 @@ body.light-theme {
   text-transform: uppercase;
   background-image: linear-gradient(
     -225deg,
-    #bb86fc,
-   #3700B3,
+    #A5F1E9,
+    #7FE9DE,
     #03DAC6
   );
   background-size: auto auto;
@@ -776,7 +822,8 @@ div.slide-right p {
 
 .work_title {
   font-size: 25px;
-  font-weight: var(--font-medium);
+  font-weight: var(--smallest-font-size);
+  color: white;
   width: 600px;
 }
 
@@ -1043,7 +1090,7 @@ input[type="text2"] {
   }
 
   .work_img {
-    width: 200px;
+    width: 60%;
   }
 
   .work_item {

@@ -1,9 +1,9 @@
 /*=============== CHANGE BACKGROUND HEADER ===============*/
-function scrollHeader() {
-  const header = getElementById('header')
-  if (this.scrollY >= 50) header.classList.add('scroll-header')
-}
-window.addEventListener('scroll', scrollHeader)
+// function scrollHeader() {
+//   const header = getElementById('header');
+//   if (this.scrollY >= 50) header.classList.add('scroll-header')
+// }
+// window.addEventListener('scroll', scrollHeader)
 
 /*=============== SERVICES MODAL ===============*/
 const modalViews = document.querySelectorAll('.services_modal'),
