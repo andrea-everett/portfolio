@@ -1,9 +1,18 @@
 /*=============== CHANGE BACKGROUND HEADER ===============*/
-// function scrollHeader() {
-//   const header = getElementById('header');
-//   if (this.scrollY >= 50) header.classList.add('scroll-header')
-// }
-// window.addEventListener('scroll', scrollHeader)
+function scrollHeader() {
+  const header = getElementById('header');
+  if (this.scrollY >= 50) header.classList.add('scroll-header')
+}
+window.addEventListener('scroll', scrollHeader)
+
+// document.querySelectorAll('a[href^=#]').forEach(anchor => {
+//     anchor.addEventListener("click", function(e){
+//       e.preventDefault();
+//       document.querySelector(this.getAttribute("href")).scrollIntoView({
+//           behavior : "smooth"
+//       });
+//     });
+//   });
 
 /*=============== SERVICES MODAL ===============*/
 const modalViews = document.querySelectorAll('.services_modal'),

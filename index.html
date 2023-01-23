@@ -51,8 +51,8 @@
                     </li>
                 </ul>
             </div>
-
-            <i class='bx bx-moon change-theme' id="theme-button"></i>
+            <div class="theme-change">  <i class='bx bx-moon change-theme' id="theme-button"></i></div>
+          
         </nav>
     </header>
 
@@ -96,20 +96,16 @@
                                 <i class='bx bxl-twitter'></i>
                             </a>
                         </div>
-
-                        <!-- <a href="#about" class="home_scroll">
-            <i class='bx bxs-mouse-alt'></i>
-            <span class="home_scroll-name">Scroll Down</span> -->
                         </a>
                     </div>
                 </div>
         </section>
 
         <!--=============== ABOUT ===============-->
-        <h2 class="section_title">About Me</h2>
+        <h2 class="section_title" id="about">About Me</h2>
         <div class="about_all">
             <p class="about_description">
-                My name is Andrea Everett, welcome to my page! I create responsive web pages using CSS, HTML, and
+                My name is Andrea Everett, welcome to my page! I create responsive web pages using CSS, HTML5, and
                 Javascript with a React.js focus.
                 <br><br>
                 I grew up in a small town in SW Colorado, and later moved to Portland, OR where I met my husband. A few
@@ -139,99 +135,10 @@
             </div>
         </div>
         </section>
-
-        <!--=============== SKILLS ===============-->
-        <!-- <section class="skills section" id="skills">
-            <h2 class="section_title">My Experience</h2>
-
-            <div class="skills_container container grid">
-                <div class="skills_content">
-                    <h3 class="skills_title">Frontend Developer</h3>
-                    <div class="skills_box">
-                        <div class="skills_group">
-                            <div class="skills_data">
-                            </div>
-                            <h3 class="skills_name">HTML/CSS</h3>
-                            <span class=" skills_level">Intermediate</span>
-                        </div>
-                        <div class="skills_group">
-                            <div class="skills_data">
-                            </div>
-                            <h3 class="skills_name">Javascript</h3>
-                            <span class=" skills_level">Intermediate</span>
-                        </div>
-                        <div class="skills_group">
-                            <div class="skills_data">
-                            </div>
-                            <h3 class="skills_name">React JS</h3>
-                            <span class=" skills_level">Intermediate</span>
-                        </div>
-                        <div class="skills_group">
-                            <div class="skills_data">
-                            </div>
-                            <h3 class="skills_name">Flexbox</h3>
-                            <span class=" skills_level">Intermediate</span>
-                        </div>
-                        <div class="skills_group">
-                            <div class="skills_data">
-                            </div>
-                            <h3 class="skills_name">Bootstrap</h3>
-                            <span class=" skills_level">Basic</span>
-                        </div>
-                        <div class="skills_group">
-                            <div class="skills_data">
-                            </div>
-                            <h3 class="skills_name">Github</h3>
-                            <span class=" skills_level"> Intermediate </span>
-                        </div>
-                    </div>
-                </div>
-                <div class="skills_content">
-                    <h3 class="skills_title">Backend Developer</h3>
-                    <div class="skills_box">
-                        <div class="skills_group">
-                            <div class="skills_data">
-                            </div>
-                            <h3 class="skills_name">Node.js</h3>
-                            <span class=" skills_level">Intermediate</span>
-                        </div>
-                        <div class="skills_group">
-                            <div class="skills_data">
-                            </div>
-                            <h3 class="skills_name">Express.js</h3>
-                            <span class=" skills_level">Intermediate</span>
-                        </div>
-                        <div class="skills_group">
-                            <div class="skills_data">
-                            </div>
-                            <h3 class="skills_name">Dbeaver</h3>
-                            <span class=" skills_level">Basic</span>
-                        </div>
-                        <div class="skills_group">
-                            <div class="skills_data">
-                            </div>
-                            <h3 class="skills_name">SQL</h3>
-                            <span class=" skills_level">Intermediate</span>
-                        </div>
-                        <div class="skills_group">
-                            <div class="skills_data">
-                            </div>
-                            <h3 class="skills_name">Postgres</h3>
-                            <span class=" skills_level">Intermediate</span>
-                        </div>
-                        <div class="skills_group">
-                            <div class="skills_data">
-                            </div>
-                            <h3 class="skills_name">Heroku</h3>
-                            <span class=" skills_level"> Intermediate</span>
-                        </div>
-                    </div>
-                </div>
-        </section> -->
-
+           
         <!-- <-=============== SERVICES ===============-->
         <section class="services section" id="services">
-            <h2 class="section_title">What I offer</h2>
+            <h2 class="section_title" id="skills">What I offer</h2>
 
             <div class="services_container container grid">
                 <div class="services_card">
@@ -352,11 +259,12 @@
 
                 <div class="work_card_design mix responsive">
                     <img src="assets/img/pinterest.jpeg" alt="" class="work_img">
-                    <!-- <div class="project_details">Technologies Used:
-                        <p>React.js with Functional Components</p>
-                        <p>Tailwindcss</p>
-                        <p>Parcel</p>
-                     </div> -->
+                    <div class="project_details projects_details--blur ">
+                        <title>Technologies Used:</title>
+                            <p>React.js with Functional Components</p>
+                            <p>Tailwindcss</p>
+                            <p>Parcel</p>
+                     </div>
 
                     <h3 class="work_title"> Pinterest Clone- In Progress</h3>
 
@@ -369,13 +277,14 @@
 
                 <div class="work_card_design mix responsive">
                     <img src="assets/img/garden-store.jpg" alt="" class="work_img">
-                    <!-- <div class="project_details">Technologies Used:
-                        <p>Javascript/HTML5</p>
-                        <p>HTML Reusable Components</p>
-                        <p>Stripe Checkout Integration</p>
-                        <p>Express.js and Node.js</p>
-                        <p>Railway</p>
-                </div> -->
+                    <div class="project_details projects_details--blur ">
+                        <title>Technologies Used:</title>
+                            <p>Javascript/HTML5</p>
+                            <p>HTML Reusable Components</p>
+                            <p>Stripe Checkout Integration</p>
+                            <p>Express.js and Node.js</p>
+                            <p>Railway</p>
+                    </div>
 
                     <h3 class="work_title">Garden Store- Stripe Payment</h3>
 
@@ -385,16 +294,16 @@
                     </div>
                 </div>
 
-                <div class="work_card_ design mix web">
+                <div class="work_card_design mix web">
                     <img src="assets/img/face-detection.png" alt="" class="work_img">
-                    <!-- <div class="project_details">Technologies Used:
-                        <p>React.js</p>
-                        <p>Express.js & Node.js</p>
-                        <p>Clarifai API</p>
-                        <p>PostgresSQL</p>
-                        <p>Dbeaver</p>
-                        <p>Heroku</p>
-                </div> -->
+                    <div class="project_details projects_details--blur ">
+                        <title>Technologies Used:</title>
+                            <p>React.js</p>
+                            <p>Express.js & Node.js</p>
+                            <p>Clarifai API</p>
+                            <p>PostgresSQL</p>
+                            <p>Dbeaver</p>
+                     </div>
 
                     <h3 class="work_title">Face-detection API</h3>
 
@@ -406,10 +315,12 @@
 
                 <div class="work_card_design mix ">
                     <img src="assets/img/sunnyside.png" alt="" class="work_img">
-                    <!-- <div class="project_details">Technologies Used:
-                    <p>Javascript/HTML5</p>
-                    <p>"Mobile-first" responsive design</p>
-                </div> -->
+                    <div class="project_details projects_details--blur ">
+                    <title>Technologies Used:</title>
+                        <p>Javascript</p>
+                        <p>CSS/HTML5</p>
+                        <p>"Mobile-first" responsive design</p>
+                </div>
 
                     <h3 class="work_title">Sunnyside Landing Page</h3>
 
