@@ -878,7 +878,7 @@ div.slide-right p {
   border: solid;
   border-radius: 10%;
   opacity: 0;
-  transition: transform .25;
+ transition: 0.3s;
 }
 
 .projects_details--blur {
