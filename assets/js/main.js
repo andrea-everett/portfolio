@@ -82,7 +82,7 @@ function openWindow2() {
 }
 
 function openWindow3() {
-  window.open("https://github.com/andrea-everett/sunnyside-challenge");
+  window.open("https://github.com/andrea-everett/faq-ai-chat.git");
 }
 
 
@@ -100,8 +100,8 @@ function openWindow6() {
 }
 
 function openWindow7() {
-  window.open(" https://andrea-everett.github.io/sunnyside-challenge/");
- 
+  window.open("https://faq-ai-chat-o9fiff707-andrea-everett.vercel.app");
+
 }
 
 /*=============== LIGHT DARK THEME ===============*/
