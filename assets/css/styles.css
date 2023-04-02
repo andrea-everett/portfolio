@@ -203,7 +203,6 @@ body.light-theme {
   color: #c7006e;
   background-color: #ee6002;
   overflow: hidden;
-  color: transparent;
   -webkit-background-clip: text;
   animation: textclip 2s linear infinite;
 }
