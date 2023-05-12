@@ -100,7 +100,7 @@ function openWindow6() {
 }
 
 function openWindow7() {
-  window.open("https://faq-ai-chat-o9fiff707-andrea-everett.vercel.app");
+  window.open("https://faq-ai-chat-production.up.railway.app");
 
 }
 
